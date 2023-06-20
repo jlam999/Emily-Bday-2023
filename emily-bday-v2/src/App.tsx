@@ -11,9 +11,11 @@ import {
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
+import LoginModal from "./LoginModal"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+    <LoginModal />
     <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />
