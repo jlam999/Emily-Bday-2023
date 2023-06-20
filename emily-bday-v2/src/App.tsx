@@ -1,40 +1,19 @@
-import * as React from "react"
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
   theme,
-} from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
-import LoginModal from "./LoginModal"
+  Image,
+  Heading,
+} from "@chakra-ui/react";
+import LoginModal from "./LoginModal";
+import beach from "./beach_copy.jpeg";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <LoginModal />
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-          <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Chakra
-          </Link>
-        </VStack>
-      </Grid>
+    <Box textAlign="center">
+      <Image src={beach} opacity={0.8} position="absolute" zIndex={-1}></Image>
+      <Heading>Happy Birthday Emily!</Heading>
     </Box>
   </ChakraProvider>
-)
+);
