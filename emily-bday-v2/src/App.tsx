@@ -7,7 +7,7 @@ export const App = () => (
     <LoginModal />
     <Box
       textAlign="center"
-      backgroundImage={`url(${beach})`}
+      bgImage={`linear-gradient(to right, rgba(255,255,255, 0.7) 0 100%), url(${beach})`}
       backgroundSize="cover"
       aspectRatio={5 / 3}
       w="100vw"
