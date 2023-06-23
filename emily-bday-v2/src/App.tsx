@@ -1,77 +1,39 @@
 import {
   ChakraProvider,
-  Box,
   theme,
   Heading,
-  keyframes,
   Text,
-  Icon,
-  HStack,
+  chakra,
+  VStack,
 } from "@chakra-ui/react";
-import LoginModal from "./LoginModal";
-import beach from "./images/beach_copy.jpeg";
-import Section from "./Section";
-import { FaChevronCircleDown as DownArrow } from "react-icons/fa";
-
-const bounce = keyframes`
-  0%, 100% {transform: translateY(0);}
-  30% {transform: translateY(-30px)}
-`;
-
-const wiggle = keyframes`
-  0%, 12%, 100% {transform: rotate(0deg)}
-  2%, 10% {transform: rotate(10deg)}
-  6% {transform: rotate(-10deg)}
-`;
-
+import LoginModal from "./components/LoginModal";
+import Section from "./components/Section";
+import anni from "./images/anni_pic.jpeg";
+import { Hero } from "./components/Hero";
 
 export const App = (): JSX.Element => {
-  const bounceAnim = `${bounce} 1s infinite linear`;
-  const wiggleAnim = `${wiggle} 3s infinite linear`;
   return (
     <ChakraProvider theme={theme}>
       <LoginModal />
-      <Box
-        textAlign="center"
-        bgImage={`linear-gradient(to right, rgba(255,255,255, 0.3) 0 100%), url(${beach})`}
-        backgroundSize="cover"
-        aspectRatio={5 / 3}
-        w="100vw"
-        display="flex"
-        flexDir="column"
-        alignItems="center"
-      >
-        <Heading
-          fontSize="8xl"
-          position="relative"
-          top="32"
-          textShadow={"2px 2px 4px gray"}
-          display="flex"
-          gap={8}
-          justifyContent="center"
-        >
-          <Text animation={bounceAnim}>Happy</Text>
-          <Text animation={bounceAnim} sx={{ "animation-delay": ".1s" }}>
-            Birthday
+      <Hero />
+      <Section>
+        <VStack p={4} spacing={4}>
+          <Heading size="3xl">Hi Emily!</Heading>
+          <Text textAlign="center" w="55%" fontSize="3xl">
+            Happy 20th Birthday! I wanted to make a CS-related project for your
+            birthday this year to make it extra special. This took me a long
+            time to learn and make so I hope you enjoy it! I love you a lot!
           </Text>
-          <Text animation={bounceAnim} sx={{ "animation-delay": ".2s" }}>
-            Emily!
-          </Text>
-        </Heading>
-        <HStack
-          position="relative"
-          top="65%"
-          p={2}
-          borderColor={"blackAlpha.100"}
-          borderWidth={1}
-          borderRadius={"20px"}
-          animation={wiggleAnim}
-        >
-          <Text fontSize={"xl"}>Scroll Down</Text>
-          <Icon as={DownArrow} />
-        </HStack>
-      </Box>
-      <Section />
+          <Text fontSize="3xl">- Judson 😘</Text>
+        </VStack>
+      </Section>
+      <Section>
+        <chakra.img src={anni} h={"xl"} />
+        <VStack p={4}>
+          <Heading>Heading</Heading>
+          <Text>Text goes here. I love you emily! </Text>
+        </VStack>
+      </Section>
     </ChakraProvider>
   );
 };
