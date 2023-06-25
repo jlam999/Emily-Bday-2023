@@ -1,13 +1,20 @@
-import { Box, Flex} from "@chakra-ui/react"
-import { ReactNode } from "react";
+import { Box, Flex, SlideFade} from "@chakra-ui/react"
+import { disconnect } from "process";
+import { ReactNode, useRef } from "react";
+import { useInViewport } from "react-in-viewport";
 
 const Section = ({children} : {children: ReactNode}):JSX.Element => {
+    const myRef = useRef(null);
+    const {inViewport} = useInViewport(myRef, {rootMargin: "-100px"}, {disconnectOnLeave: false});
+
     return (
-      <Box py={8} px={16}>
-        <Flex bgColor="pink.50" justify="space-evenly" align="center" p={4}>
-          {children}
-        </Flex>
-      </Box>
+      <SlideFade in={inViewport} offsetY="30px">
+        <Box ref={myRef} py={8} px={16}>
+          <Flex bgColor="pink.50" justify="space-evenly" align="center" p={4}>
+            {children}
+          </Flex>
+        </Box>
+      </SlideFade>
     );
 }
 

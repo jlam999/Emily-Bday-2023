@@ -5,6 +5,7 @@ import {
   Text,
   chakra,
   VStack,
+  SlideFade,
 } from "@chakra-ui/react";
 import LoginModal from "./components/LoginModal";
 import Section from "./components/Section";
