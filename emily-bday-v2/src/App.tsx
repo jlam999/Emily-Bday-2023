@@ -20,7 +20,7 @@ export const App = (): JSX.Element => {
       <Section>
         <VStack p={4} spacing={4}>
           <Heading size="3xl">Hi Emily!</Heading>
-          <Text textAlign="center" w="55%" fontSize="3xl">
+          <Text textAlign="center" w="70%" fontSize="3xl">
             Happy 20th Birthday! I wanted to make a CS-related project for your
             birthday this year to make it extra special. This took me a long
             time to learn and make so I hope you enjoy it! I love you a lot!
@@ -29,7 +29,7 @@ export const App = (): JSX.Element => {
         </VStack>
       </Section>
       <Section>
-        <chakra.img src={anni} h={"xl"} />
+        <chakra.img src={anni} h="xl"/>
         <VStack p={4}>
           <Heading>Heading</Heading>
           <Text>Text goes here. I love you emily! </Text>
