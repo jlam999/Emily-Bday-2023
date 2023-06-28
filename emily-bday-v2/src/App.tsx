@@ -5,10 +5,10 @@ import {
   Text,
   chakra,
   VStack,
+  Box
 } from "@chakra-ui/react";
 import LoginModal from "./components/LoginModal";
 import Section from "./components/Section";
-import anni from "./images/anni_pic.jpeg";
 import { Hero } from "./components/Hero";
 import aug from "./images/0august.jpeg";
 import dec from "./images/0december.jpeg";
@@ -22,6 +22,7 @@ import nov from "./images/0nov.jpeg";
 import oct from "./images/0oct.jpeg";
 import apr from "./images/0april.jpeg";
 import sept from "./images/0sept.jpeg";
+import Carousel from "./components/Carousel";
 
 type SectionInfo = {
   image: string;
@@ -35,20 +36,6 @@ export const App = (): JSX.Element => {
   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
   \nisi ut aliquip ex ea commodo consequat.
 `;
-  const months: string[] = [
-    jan,
-    feb,
-    mar,
-    apr,
-    may,
-    june,
-    july,
-    aug,
-    sept,
-    oct,
-    nov,
-    dec,
-  ];
 
   const sections: SectionInfo[] = [
     {
@@ -144,6 +131,7 @@ export const App = (): JSX.Element => {
           </Section>
         );
       })}
+      <Carousel />
     </ChakraProvider>
   );
 };
