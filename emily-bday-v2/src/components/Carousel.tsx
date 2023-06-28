@@ -77,7 +77,6 @@ export default function Carousel() {
         />
 
         <Box px={4} pb={12} pt={8} bgColor="pink.50" position="relative">
-          <Heading textAlign={"center"} pb={8} size="2xl">Thank you for all the wonderful memories</Heading>
           <Slider {...settings} ref={(slider) => setSlider(slider)}>
             {cards.map((url, index) => (
               <chakra.img

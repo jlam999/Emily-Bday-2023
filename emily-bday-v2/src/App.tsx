@@ -5,7 +5,6 @@ import {
   Text,
   chakra,
   VStack,
-  Box
 } from "@chakra-ui/react";
 import LoginModal from "./components/LoginModal";
 import Section from "./components/Section";
@@ -131,6 +130,14 @@ export const App = (): JSX.Element => {
           </Section>
         );
       })}
+      <Section>
+        <VStack spacing={4}>
+          <Heading size="2xl">
+            Thank you for all of the wonderful memories!
+          </Heading>
+          <Text fontSize="2xl">I hope you have the best birthday ever!</Text>
+        </VStack>
+      </Section>
       <Carousel />
     </ChakraProvider>
   );
