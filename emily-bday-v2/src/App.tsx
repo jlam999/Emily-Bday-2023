@@ -58,7 +58,7 @@ export const App = (): JSX.Element => {
           <Heading size="2xl">
             Thank you for all of the wonderful memories!
           </Heading>
-          <Text fontSize="2xl">I hope you have the best birthday ever!</Text>
+          <Text fontSize="2xl">I hope you have the best birthday ever! I love you so much!</Text>
         </VStack>
       </Section>
       <Carousel />

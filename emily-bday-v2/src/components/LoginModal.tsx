@@ -22,7 +22,7 @@ import {
 
 const LoginModal = (): JSX.Element => {
   // const [isOpen, setIsOpen] = useBoolean(true);
-  const { isOpen, onClose } = useDisclosure({ defaultIsOpen: false });
+  const { isOpen, onClose } = useDisclosure({ defaultIsOpen: true });
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
