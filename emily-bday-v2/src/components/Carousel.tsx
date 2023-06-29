@@ -1,4 +1,4 @@
-import { Box, chakra, Heading, IconButton, SlideFade } from "@chakra-ui/react";
+import { Box, chakra, IconButton, SlideFade } from "@chakra-ui/react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Slider from "react-slick";
 import { useState } from "react";
