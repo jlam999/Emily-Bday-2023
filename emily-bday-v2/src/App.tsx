@@ -12,13 +12,13 @@ import { Hero } from "./components/Hero";
 import Carousel from "./components/Carousel";
 import { SectionInfo, sections } from "./SectionBlurbs";
 import "@fontsource/hind-siliguri";
-import "@fontsource/hind-madurai"
+import "@fontsource/hind-madurai";
 
 export const App = (): JSX.Element => {
   const theme = extendTheme({
     fonts: {
       body: `'Hind Siliguri', sans-serif`,
-      heading: `'Hind Madurai', sans-serif`
+      heading: `'Hind Madurai', sans-serif`,
     },
   });
 
@@ -58,7 +58,9 @@ export const App = (): JSX.Element => {
           <Heading size="2xl">
             Thank you for all of the wonderful memories!
           </Heading>
-          <Text fontSize="2xl">I hope you have the best birthday ever! I love you so much!</Text>
+          <Text fontSize="2xl">
+            I hope you have the best birthday ever! I love you so much!
+          </Text>
         </VStack>
       </Section>
       <Carousel />
