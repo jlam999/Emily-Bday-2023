@@ -5,6 +5,7 @@ import {
   chakra,
   VStack,
   extendTheme,
+  Button,
 } from "@chakra-ui/react";
 import LoginModal from "./components/LoginModal";
 import Section from "./components/Section";
@@ -64,6 +65,20 @@ export const App = (): JSX.Element => {
         </VStack>
       </Section>
       <Carousel />
+      <Section>
+        <VStack>
+          <Heading>Last but not least...</Heading>
+          <Button
+            as="a"
+            href="https://www.youtube.com/watch?v=3Uw3hrenHLI&ab_channel=JudsonLam"
+            variant="link"
+            colorScheme="pink"
+            size="lg"
+          >
+            Click here!
+          </Button>
+        </VStack>
+      </Section>
     </ChakraProvider>
   );
 };
