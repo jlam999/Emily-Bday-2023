@@ -70,7 +70,7 @@ export const App = (): JSX.Element => {
           <Heading>Last but not least...</Heading>
           <Button
             as="a"
-            href="https://www.youtube.com/watch?v=3Uw3hrenHLI&ab_channel=JudsonLam"
+            href="https://youtu.be/tdZhN7iV4yE"
             variant="link"
             colorScheme="pink"
             size="lg"
