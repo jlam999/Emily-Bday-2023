@@ -66,11 +66,11 @@ export const App = (): JSX.Element => {
       </Section>
       <Carousel />
       <Section>
-        <VStack>
+        <VStack spacing={4}>
           <Heading>Last but not least...</Heading>
           <Button
             as="a"
-            href="https://youtu.be/tdZhN7iV4yE"
+            href="https://www.youtube.com/watch?v=tdZhN7iV4yE&ab_channel=JudsonLam"
             variant="link"
             colorScheme="pink"
             size="lg"
