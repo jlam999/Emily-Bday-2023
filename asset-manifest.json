@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Emily-Bday-2023/static/css/main.25607646.css",
-    "main.js": "/Emily-Bday-2023/static/js/main.3398652e.js",
+    "main.js": "/Emily-Bday-2023/static/js/main.ca876b69.js",
     "static/js/787.8bddea01.chunk.js": "/Emily-Bday-2023/static/js/787.8bddea01.chunk.js",
     "static/media/adler_duo.jpeg": "/Emily-Bday-2023/static/media/adler_duo.2fa9fed83b87dc6e1cd3.jpeg",
     "static/media/coldddd.jpeg": "/Emily-Bday-2023/static/media/coldddd.58e925c18454c1a73718.jpeg",
@@ -42,11 +42,11 @@
     "static/media/hind-siliguri-latin-ext-400-normal.woff": "/Emily-Bday-2023/static/media/hind-siliguri-latin-ext-400-normal.3865bcc3a1329133c5e1.woff",
     "index.html": "/Emily-Bday-2023/index.html",
     "main.25607646.css.map": "/Emily-Bday-2023/static/css/main.25607646.css.map",
-    "main.3398652e.js.map": "/Emily-Bday-2023/static/js/main.3398652e.js.map",
+    "main.ca876b69.js.map": "/Emily-Bday-2023/static/js/main.ca876b69.js.map",
     "787.8bddea01.chunk.js.map": "/Emily-Bday-2023/static/js/787.8bddea01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25607646.css",
-    "static/js/main.3398652e.js"
+    "static/js/main.ca876b69.js"
   ]
 }
